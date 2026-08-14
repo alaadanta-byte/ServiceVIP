@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service VIP | سيرفيس VIP - تصفح أشهر اشتراكات الذكاء الاصطناعي</title>
+    <meta name="description" content="متجر Service VIP يوفر لك أفضل اشتراكات أدوات الذكاء الاصطناعي والخدمات الرقمية الرسمية بأسعار تنافسية وتسليم فوري وأمان تام.">
+    
+    <!-- Google Fonts: Readex Pro, IBM Plex Sans Arabic, Tajawal, Alexandria & Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=block" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode preload">
+    <!-- Ambient Background Glow & Particles Canvas -->
+    <div class="glow-bg-container">
+        <div class="ambient-glow glow-1"></div>
+        <div class="ambient-glow glow-2"></div>
+        <div class="ambient-glow glow-3"></div>
+        <div class="bg-grid-overlay"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header" id="header">
+        <div class="container navbar-container">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo" id="brand-logo">
+                <div class="logo-text">
+                    <span class="logo-title">Service <span class="vip-badge">VIP</span></span>
+                    <div class="brand-animated-bar"></div>
+                </div>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="القائمة">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Overlay -->
+            <div class="nav-overlay" id="navOverlay"></div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <button class="close-nav-btn" id="closeNavBtn" aria-label="إغلاق القائمة">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <a href="index.html" class="nav-link active">الرئيسية</a>
+                <a href="products.html" class="nav-link">المنتجات</a>
+                <a href="offers.html" class="nav-link">العروض</a>
+                <a href="contact.html" class="nav-link">تواصل معنا</a>
+            </nav>
+
+            <!-- User Actions & Controls -->
+            <div class="nav-actions">
+                <!-- Cart Button -->
+                <button class="icon-btn cart-btn" id="cartToggleBtn" title="سلة المشتريات">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cartCount">0</span>
+                </button>
+
+                <!-- Currency Toggle Switcher (EG / US) -->
+                <button class="currency-toggle-btn" id="currencyToggleBtn" title="تغيير العملة (EG / US)">
+                    <span class="currency-code-text" id="currencyCodeText">EG</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main>
+        <!-- Hero Section (Matches Screenshot 1 Layout) -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                
+                <!-- Right Side: Text & Actions (RTL) -->
+                <div class="hero-text-content">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>المنصة الأسرع والأكثر أماناً للاشتراكات VIP</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        اشترك في أقوى <br>
+                        برامج <span class="text-gradient">الذكاء الاصطناعي</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        نوفر لك اشتراكات رسمية وأمنة لأشهر أدوات الذكاء الاصطناعي والخدمات الرقمية بأسعار تنافسية وتسليم فوري ومضمون 100%.
+                    </p>
+
+                    <!-- Feature Badges Pill List -->
+                    <div class="hero-features-list">
+                        <div class="feature-pill">
+                            <span class="pill-icon gold"><i class="fa-solid fa-sack-dollar"></i></span>
+                            <span>أسعار تنافسية</span>
+                        </div>
+                        <div class="feature-pill">
+                            <span class="pill-icon cyan"><i class="fa-solid fa-bolt-lightning"></i></span>
+                            <span>تسليم فوري</span>
+                        </div>
+                        <div class="feature-pill">
+                            <span class="pill-icon green"><i class="fa-solid fa-shield-halved"></i></span>
+                            <span>آمن وموثوق</span>
+                        </div>
+                    </div>
+
+                    <!-- Primary Action Button -->
+                    <div class="hero-cta-group">
+                        <a href="products.html" class="btn btn-primary btn-lg cta-btn">
+                            <span>تصفح المنتجات والاشتراكات</span>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#how-it-works" class="btn btn-glass btn-lg">
+                            <i class="fa-solid fa-play"></i>
+                            <span>كيفية الشراء</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Special Offers Section -->
+        <section class="offers-section" id="offers">
+            <div class="container">
+                <div class="offers-banner">
+                    <div class="offers-content">
+                        <div class="offers-badge">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <span>عروض VIP الحصرية</span>
+                        </div>
+                        <h2 class="offers-title">أقوى التخفيضات على اشتراكات الذكاء الاصطناعي</h2>
+                        <p class="offers-desc">استمتع بخصومات تصل إلى 50% على أشهر الأدوات والخدمات الرقمية مع تفعيل فوري وضمان ذهبي 100%.</p>
+                        <div class="offers-cta">
+                            <a href="products.html" class="btn btn-primary btn-lg">
+                                <span>تصفح المنتجات والاشتراكات</span>
+                                <i class="fa-solid fa-bolt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="offers-visual-badge">
+                        <div class="discount-circle">
+                            <span class="disc-num">50%</span>
+                            <span class="disc-txt">خصم VIP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Showcase Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feat-icon"><i class="fa-solid fa-headset"></i></div>
+                        <h3>دعم فني 24/7</h3>
+                        <p>فريقنا متواجد على مدار الساعة للرد على استفساراتك ومساعدتك.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feat-icon"><i class="fa-solid fa-rotate-left"></i></div>
+                        <h3>ضمان ذهبي</h3>
+                        <p>نضمن لك استمرار الخدمة 100% طوال فترة اشتراكك أو استرجاع أموالك.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feat-icon"><i class="fa-solid fa-lock"></i></div>
+                        <h3>حسابات رسمية 100%</h3>
+                        <p>جميع الاشتراكات تُفعل رسمياً وآمنة تماماً بدون أي انقطاع.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feat-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h3>تسليم فوري تلقائي</h3>
+                        <p>يصلك الحساب أو التفعيل فور إتمام عملية الدفع مباشرة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works-section" id="how-it-works">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle"><i class="fa-solid fa-sliders"></i> خطوات بسيطة</span>
+                    <h2 class="section-title">كيف تعمل منصة Service VIP؟</h2>
+                    <p class="section-desc">احصل على اشتراكك في أقل من دقيقة بخطوات سهلة ومباشرة</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon"><i class="fa-solid fa-square-check"></i></div>
+                        <h3>اختر الاشتراك</h3>
+                        <p>تصفح قائمة الخدمات والذكاء الاصطناعي واختر الباقة المناسبة لاحتياجاتك.</p>
+                    </div>
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-left"></i></div>
+
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon"><i class="fa-solid fa-credit-card"></i></div>
+                        <h3>ادفع بأمان</h3>
+                        <p>اختر وسيلة الدفع المناسبة لك (انستا باي، فودافون كاش، فوري، بينانس باي) وادفع بكل سهولة.</p>
+                    </div>
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-left"></i></div>
+
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon"><i class="fa-solid fa-box-open"></i></div>
+                        <h3>استلم حسابك فوراً</h3>
+                        <p>سيصلك بيانات التفعيل والاشتراك فوراً عبر البريد الإلكتروني وواتساب.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle"><i class="fa-solid fa-circle-question"></i> الإجابات المباشرة</span>
+                    <h2 class="section-title">الأسئلة الشائعة</h2>
+                    <p class="section-desc">كل ما تحتاج معرفته عن خدماتنا واشتراكاتنا الرسمية</p>
+                </div>
+
+                <div class="faq-accordion-wrapper">
+                    <div class="faq-item active">
+                        <button type="button" class="faq-question" onclick="toggleFaqItem(this)">
+                            <span>هل الاشتراكات رسمية ومضمونة؟</span>
+                            <div class="faq-arrow-badge">
+                                <i class="fa-solid fa-chevron-down faq-icon"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم بالتأكيد، جميع الاشتراكات في Service VIP رسمية 100% ويتم تفعيلها بالطرق المعتمدة، مع ضمان كامل طوال مدة اشتراكك.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" onclick="toggleFaqItem(this)">
+                            <span>كم يستغرق تسليم الاشتراك بعد الدفع؟</span>
+                            <div class="faq-arrow-badge">
+                                <i class="fa-solid fa-chevron-down faq-icon"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>التسليم فوري وتلقائي في أغلب الخدمات (من دقيقة إلى 15 دقيقة كحد أقصى) مباشرة بعد تأكيد عملية الدفع.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" onclick="toggleFaqItem(this)">
+                            <span>ما هي طرق الدفع المتاحة؟</span>
+                            <div class="faq-arrow-badge">
+                                <i class="fa-solid fa-chevron-down faq-icon"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نوفر طرق الدفع الآمنة: انستا باي (InstaPay)، فودافون كاش (Vodafone Cash)، فوري باي (Fawry Pay)، و بينانس باي (Binance Pay).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <h2>هل لديك استفسار خاص؟</h2>
+                        <p>تواصل معنا وسيقوم فريق الدعم الفني بمساعدتك واختيار أفضل باقة تناسبك.</p>
+                        <div class="contact-methods">
+                            <a href="https://wa.me/#" target="_blank" class="contact-pill whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>تواصل عبر الواتساب</span>
+                            </a>
+                            <a href="mailto:support@servicevip.com" class="contact-pill email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>support@servicevip.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Slide-in Shopping Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> سلة المشتريات (<span id="cartDrawerCount">0</span>)</h3>
+            <button class="close-drawer-btn" id="closeCartBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="cart-drawer-body" id="cartItemsContainer">
+            <div class="empty-cart-state" id="emptyCartState">
+                <i class="fa-solid fa-basket-shopping empty-icon"></i>
+                <p>سلتك فارغة حالياً</p>
+            </div>
+        </div>
+
+        <div class="cart-drawer-footer" id="cartDrawerFooter">
+            <div class="cart-subtotal">
+                <span>المجموع الكلي:</span>
+                <span class="total-price-text" id="cartTotalPrice">0 ج.م</span>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+                <span>إتمام الطلب والدفع</span>
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Auth Modal Dialog -->
+    <div class="modal-overlay" id="authModalOverlay">
+        <div class="modal-card">
+            <button class="close-modal-btn" id="closeAuthModalBtn"><i class="fa-solid fa-xmark"></i></button>
+            
+            <div class="modal-tabs">
+                <button class="auth-tab-btn active" id="tabLoginBtn">تسجيل الدخول</button>
+                <button class="auth-tab-btn" id="tabRegisterBtn">حساب جديد</button>
+            </div>
+
+            <form class="auth-form active" id="loginForm">
+                <div class="form-group">
+                    <label>البريد الإلكتروني أو رقم الهاتف</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="name@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>كلمة المرور</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">تسجيل الدخول</button>
+            </form>
+
+            <form class="auth-form" id="registerForm">
+                <div class="form-group">
+                    <label>الاسم الكامل</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-id-card"></i>
+                        <input type="text" placeholder="أحمد محمد" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>البريد الإلكتروني</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>كلمة المرور</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">إنشاء حساب VIP جديد</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <div class="brand-logo">
+                    <div class="logo-text">
+                        <span class="logo-title">Service <span class="vip-badge">VIP</span></span>
+                        <div class="brand-animated-bar"></div>
+                    </div>
+                </div>
+                <p class="footer-about">
+                    منصة Service VIP الأولى في العالم العربي لتوفير اشتراكات أدوات الذكاء الاصطناعي والخدمات البرمجية بأعلى درجات الأمان والسرعة.
+                </p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="offers.html">العروض</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="admin.html" style="opacity: 0.7;"><i class="fa-solid fa-lock" style="font-size: 0.8rem;"></i> لوحة التحكم</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>الاشتراكات الشهيرة</h4>
+                <ul>
+                    <li><a href="#subscriptions">ChatGPT Plus</a></li>
+                    <li><a href="#subscriptions">Claude Pro</a></li>
+                    <li><a href="#subscriptions">Midjourney</a></li>
+                    <li><a href="#subscriptions">Gemini Advanced</a></li>
+                    <li><a href="#subscriptions">Perplexity Pro</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col payment-col">
+                <h4>طرق الدفع الآمنة</h4>
+                <div class="payment-methods-list">
+                    <div class="payment-pill-row instapay" title="InstaPay">
+                        <div class="payment-logo-badge">
+                            <svg viewBox="0 0 98 24" width="70" height="18" fill="none">
+                                <g font-family="'Readex Pro', Arial, sans-serif" font-weight="900" font-style="italic" font-size="14.5">
+                                    <text x="0" y="17" fill="#4c1d95" letter-spacing="-0.5">INSTA</text>
+                                    <path d="M49 6l3.2 5.5L49 17M53 6l3.2 5.5L53 17" stroke="#ff5500" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <text x="58" y="17" fill="#9333ea" letter-spacing="-0.5">PAY</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <span>انستا باي InstaPay</span>
+                    </div>
+                    <div class="payment-pill-row vodafone" title="Vodafone Cash">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                            <rect width="24" height="24" rx="6" fill="#e60000"/>
+                            <path d="M12 4a8 8 0 0 0-8 8c0 4.42 3.58 8 8 8a7.96 7.96 0 0 0 6.5-3.37l-2.07-1.2A5.96 5.96 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6c0 1.25-.38 2.4-1.03 3.36l1.63 1.22A7.94 7.94 0 0 0 20 12a8 8 0 0 0-8-8z" fill="#ffffff"/>
+                        </svg>
+                        <span>فودافون كاش Vodafone Cash</span>
+                    </div>
+                    <div class="payment-pill-row fawry" title="Fawry Pay">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                            <rect width="24" height="24" rx="6" fill="#ffc709"/>
+                            <path d="M7 6h10v2H7V6zm0 4h10v2H7v-2zm0 4h7v2H7v-2z" fill="#0054a6"/>
+                            <circle cx="16" cy="15" r="1.5" fill="#0054a6"/>
+                        </svg>
+                        <span>فوري باي Fawry Pay</span>
+                    </div>
+                    <div class="payment-pill-row binance" title="Binance Pay">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                            <rect width="24" height="24" rx="6" fill="#181a20"/>
+                            <path d="M12 5l2.5 2.5L12 10 9.5 7.5 12 5zm-4.5 4.5L10 12l-2.5 2.5L5 12l2.5-2.5zm9 0L19 12l-2.5 2.5L14 12l2.5-2.5zM12 14l2.5 2.5L12 19l-2.5-2.5L12 14zm0-4.5L14.5 12 12 14.5 9.5 12 12 9.5z" fill="#f0b90b"/>
+                        </svg>
+                        <span>بينانس باي Binance Pay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>جميع الحقوق محفوظة &copy; 2025 <strong>Service VIP</strong>.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
